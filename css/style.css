@@ -20,12 +20,15 @@ li {
 nav {
     width: 250px;
     height: calc(100vh - 80px);
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
     background-color: black;
     color: #717171;
 }
 nav .nav_first_list li,
 nav .nav_second_list li  {
-    display:flex;
+    display: flex;
     padding-top : 10px;
 }
 nav .nav_first_list a {
@@ -46,26 +49,51 @@ nav h5 {
 }
 .nav_first_list {
     padding-top: 20px;
-    font-weight:bold;
 }
 nav .logo {
     height: 50px;
+}
+.mini_logo {
+    display: none;
 }
 .nav_little_logos {
     display: inline-block;
     height: 25px;
 }
-.nav_second_list {
-    font-weight:bold;
-}
-nav span {
-    font-size: 16px;
-    padding-left: 10px;
-}
 nav .nav_second_list a {
-    align-self:flex-end;
     text-decoration: none;
     color: #717171;
+}
+nav .nav_second_list li {
+    padding: 10px 0;
+}
+.new_playlist {
+    font-size: 16px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+.nav_third_list {
+    position: absolute;
+    bottom: 1%;
+}
+nav .nav_third_list li {
+    padding: 10px 0;
+    line-height: 10px;
+    vertical-align: middle;
+}
+nav hr {
+    width: 200%;
+    border: 1px solid #717171;
+    color:#717171;
+}
+nav .nav_third_list img {
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+nav .nav_third_list .profile {
+    background-color: #717171;
 }
 
 
@@ -103,12 +131,26 @@ footer {
 /* queries */
 @media screen and (max-width: 767px) {
     nav {
-        width: 50px;
+        width: 70px;
     }
-    nav .nav_first_list li,
+    nav .nav_first_list a,
     nav .nav_second_list li,
-    nav h5 {
+    nav .nav_third_list,
+    nav h5,
+    .logo {
         display: none;
+    }
+    nav .nav_little_logos {
+        height: 30px;
+        margin-left : 18px;
+    }
+    .nav_container {
+        padding: 0;
+    }
+    .mini_logo {
+        display: block; 
+        height: 30px;
+        margin: 18px;
     }
     main {
         width: calc(100% - 50px);
