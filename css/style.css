@@ -38,6 +38,7 @@ nav .nav_first_list a {
     color: #717171;
 }
 nav h5 {
+    font-size: 12px;
     padding-top : 20px;
     padding-bottom : 10px;
 }
@@ -96,7 +97,6 @@ nav .nav_third_list .profile {
     background-color: #717171;
 }
 
-
 /* main */
 main {
     height: 100vh;
@@ -113,10 +113,26 @@ main {
     position: fixed;
     top:0;
     height: 100px;
-    width: 100%;
+    width: calc(100% - 250px);
     color: white;
     background-color: #080B13;
 }
+#upgrade {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid white;
+    margin: 30px 0;
+    background-color: transparent;
+    color: white;
+}
+.main_header a {
+   text-decoration: none;
+   color: white;
+}
+
 /* footer */
 footer {
     width: 100%;
@@ -143,6 +159,9 @@ footer {
     nav .nav_little_logos {
         height: 30px;
         margin-left : 18px;
+    }
+    .main_header {
+        width: calc(100% - 70px);
     }
     .nav_container {
         padding: 0;
