@@ -102,9 +102,9 @@ main {
     height: 100vh;
     width: calc(100% - 250px);
     overflow-y: auto;
-    padding-top: 110px;
+    padding-top: 90px;
     padding-bottom: 85px;
-    background-color: aqua;
+    background-color: #141923;
 }
 .opacity {
     opacity: 0.9;
@@ -112,7 +112,7 @@ main {
 .main_header {
     position: fixed;
     top:0;
-    height: 100px;
+    height: 80px;
     width: calc(100% - 250px);
     color: white;
     background-color: #080B13;
@@ -121,10 +121,13 @@ main {
     display: inline-block;
     position: absolute;
     right: 0;
-    padding: 10px 30px;
+    padding: 10px 34px;
     border-radius: 30px;
     border: 1px solid white;
-    margin: 30px 0;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
     background-color: transparent;
     color: white;
 }
@@ -132,20 +135,112 @@ main {
    text-decoration: none;
    color: white;
 }
+.menu_up {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.menu_up li {
+    display: inline-block;
+    
+}
+.menu_up a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color:#717171;
+}
 
 /* footer */
 footer {
     width: 100%;
     height: 80px;
-    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    background-color: #282828;
     position: absolute;
     bottom: 0;
 }
+.footer_l {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    color: #717171;
+}
+.footer_l li {
+    display: inline-block;
+    padding-left: 10px;
+}
+.footer_l img {
+    height: 40px;
+}
+.footer_l i {
+    font-size: 20px;
+}
+.footer_l i:first-child {
+    padding-left: 20px;
+}
+.footer_l i {
+    padding: 5px;
+}
+.footer_c {
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+.footer_c i {
+    padding-left: 20px;
+    font-size: 18px;
+    color: white;
+}
+.playbar,
+.line_playbar {
+    line-height: 30px;
+    vertical-align: middle;
+}
+.line_playbar span {
+    padding: 15px;
+}
+.play_line {
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    height: 5px;
+    background: linear-gradient(to right, white 30%,#717171 70%);
+}
+
+.footer_r {
+    width: 250px;
+    line-height: 80px;
+    height: 100%;
+    color: white;
+}
+.footer_r i {
+    padding: 10px;
+    color: white;
+}
+.play_line2 {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    height: 5px;
+    background: linear-gradient(to right, white 30%,#717171 70%);
+}
+
 
 
 
 /* queries */
 @media screen and (max-width: 767px) {
+    
+    /* nav */
     nav {
         width: 70px;
     }
@@ -171,8 +266,74 @@ footer {
         height: 30px;
         margin: 18px;
     }
+    /* main */
     main {
         width: calc(100% - 50px);
     }
-  
+    .menu_up li {
+        padding-bottom: 30px;
+    }
+    .menu_up a {
+        font-size: 10px;
+    }
+
+    /* footer */
+    .footer_l,
+    .footer_r {
+        width: 120px;
+    }
+    .footer_l img {
+        height: 30px;
+    }
+    .footer_l div.footer_title {
+        font-size: 12px;
+    }
+    .footer_l ul {
+        display: flex;
+    }
+    .footer_l li {
+        text-align: center;
+    }
+    .footer_l i:first-child {
+        padding-left: 0px;
+    }
+    .footer_l i {
+        font-size: 16px;
+        padding: 0;
+    }
+    .footer_c {
+        width: 40%;
+    }
+    .footer_c i {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+    .play_line {
+        width: 50%;
+    }
+    .line_playbar span {
+        font-size: 10px;
+        padding: 0 2px;
+    }
+    .footer_r i {
+        font-size: 10px;
+        padding: 1px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .menu_up li {
+        padding-bottom: 30px;
+    }
+}
+    
+@media screen and (max-width: 1200px) {
+    .play_line {
+        width: 60%;
+    }
+    .line_playbar span {
+        font-size:14px;
+        padding: 0 2px;
+    }
 }
