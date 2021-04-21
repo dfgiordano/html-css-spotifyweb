@@ -39,7 +39,6 @@ nav {
 .nav_top {
     overflow-y: auto;
 }
-
 nav .nav_first_list li,
 nav .nav_second_list li  {
     display: flex;
@@ -209,7 +208,7 @@ main {
    margin: 20px 10px 15px 0px;
    cursor: pointer;
 }
-.layover > i{
+.layover > i {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -230,13 +229,15 @@ main {
 .layover:hover {
     opacity: 1;
 }
-
- h6 {
-     max-width: 150px;
+h6 {
     text-align: center;
     text-transform: capitalize;
     font-size: 14px;
     color: white;
+}
+#max_width {
+    max-width: 150px;
+    margin: auto;
 }
 figure {
     text-align: center;
