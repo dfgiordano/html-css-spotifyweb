@@ -33,9 +33,11 @@ nav {
     padding: 20px;
     font-size: 12px;
     font-weight: bold;
-    overflow-y: auto;
     background-color: black;
     color: #717171;
+}
+.nav_top {
+    overflow-y: auto;
 }
 
 nav .nav_first_list li,
@@ -359,13 +361,19 @@ footer {
     height: 5px;
     background-color: #5A5A5A;
 }
+.played:hover {
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:#9CE62E;
+}
 .played {
     width: 20%;
     height: 5px;
     border-radius: 5px;
     background-color: white;
 }
-
 .footer_r {
     width: 250px;
     line-height: 80px;
@@ -392,6 +400,7 @@ footer {
     /* nav */
     nav {
         width: 70px;
+        padding:0;
     }
     nav .nav_first_list a,
     nav .nav_second_list li,
