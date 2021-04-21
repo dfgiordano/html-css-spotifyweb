@@ -17,11 +17,17 @@ li {
 .selected {
     border-left: 3px solid #9CE62E;
 }
+.position_relative {
+    position:relative;
+}
 /* nav */
 .container {
     display:flex;
 }
 nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 250px;
     height: calc(100vh - 80px);
     padding: 20px;
@@ -31,6 +37,7 @@ nav {
     background-color: black;
     color: #717171;
 }
+
 nav .nav_first_list li,
 nav .nav_second_list li  {
     display: flex;
@@ -195,11 +202,33 @@ main {
     margin-left: 15px;
 }
 .main_image {
-   display: inline-block;
+   display: block;
    height: 180px;
    margin: 20px 10px 15px 0px;
    cursor: pointer;
 }
+.layover > i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color:white;
+    cursor:pointer;
+}
+.layover {
+    height:100%;
+    width: 95%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.layover:hover {
+    opacity: 1;
+}
+
  h6 {
      max-width: 150px;
     text-align: center;
@@ -235,18 +264,16 @@ figure {
 .rounded {
     border-radius: 50%;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
+/* .layover_circle {
+    height:100%;
     width: 100%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
     opacity: 0;
-    transition: .3s ease;
-    background-color: red;
-  }
+    background-color: rgba(0, 0, 0, 0.4);
+} */
 /* footer */
 footer {
     width: 100%;
