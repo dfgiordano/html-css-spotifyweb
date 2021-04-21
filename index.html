@@ -18,7 +18,7 @@
                     <img class="logo" src="img/logo.svg" alt="Spotify">
                     <img class="mini_logo" src="img/logo-small.svg" alt="Spotify Mini">
                     <ul class="nav_first_list">
-                        <li>
+                        <li class="selected" >
                             <img class="nav_little_logos" src="img/home.svg" alt="Home Icon"> 
                             <a href="#">Home</a>
                         </li>
@@ -34,7 +34,7 @@
                     <h5 class="color_w text_up">playlist</h5>
                     <ul class="nav_second_list">
                         <li>
-                            <i class="plus fas fa-plus-square"><span class="new_playlist"> <a href="#">Crea playlist</a></span></i>
+                            <i class="plus fas fa-plus-square"><span class="new_playlist"></span> <a href="#">Crea playlist</a></span></i>
                         </li>
                         <li>
                             <a href="#">Nome Playlist</a>
@@ -57,7 +57,8 @@
                     <ul class="nav_third_list">
                         <li>
                             <img src="img/download.svg" alt="Download">
-                            Installa app</li>
+                            <a href="#">Installa app</a>
+                        </li>
                         <hr>
                         <li>
                             <img class="profile" src="img/profile.svg" alt="Profile">
@@ -75,7 +76,7 @@
                 </div>
                 <ul class="menu_up">
                     <li>
-                        <a href="#">in evidenza</a>
+                        <a class="select" href="#">in evidenza</a>
                     </li>
                     <li>
                         <a href="#">podcast</a>
@@ -96,10 +97,12 @@
                 <h2 class="main_first_title">Recently played</h2>
                 <section class="container_played">
                     <div>
-                        <img class="main_image" src="img/metal_lifting.jpg" alt="Metal music">
+                        <div class="overlay_img">
+                            <img class="main_image" src="img/metal_lifting.jpg" alt="Metal music">
+                        </div>
+                        
                         <h6>heavy metal</h6>
                         <figure>Subtitle</figure>
-
                     </div>
                     <div>
                         <img class="main_image" src="img/stranger.jpeg" alt="Stranger things theme">
@@ -108,22 +111,22 @@
                     </div>
                     <div>
                         <img class="main_image" src="img/aquietplace.jpeg" alt="A quiet place">
-                        <h6>heavy metal</h6>
+                        <h6>A quiet place</h6>
                         <figure>Subtitle</figure>
                     </div>
                     <div>
                         <img class="main_image" src="img/split.jpeg" alt="Split">
-                        <h6>heavy metal</h6>
+                        <h6>Split</h6>
                         <figure>Subtitle</figure>
                     </div>
                     <div>
                         <img class="main_image" src="img/cure.jpeg" alt="A cure for wellness">
-                        <h6>heavy metal</h6>
+                        <h6>A cure for wellness</h6>
                         <figure>Subtitle</figure>
                     </div>
                     <div>
-                        <img class="main_image" src="img/sinister.jpeg" alt="Sinistrer">
-                        <h6>heavy metal</h6>
+                        <img class="main_image" src="img/sinister.jpeg" alt="Sinister">
+                        <h6>Sinister</h6>
                         <figure>Subtitle</figure>
                     </div>     
                 </section>
@@ -133,13 +136,32 @@
                     <div class="container_created">
                         <div>
                             <img class="main_image" src="img/radar.jpeg" alt="Radar release">
+                            <h6>Release Radar</h6>
                         </div>
                         <div>
                             <img class="main_image" src="img/mixdaily.jpeg" alt="Daily mix">
+                            <h6>Daily Mix 1</h6>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section_3">
+                    <h2 class="main_third_title">Artisti pi&uacute; popolari</h2>
+                    <p>Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti.</p>
+                    <div class="container_most_popular">
+                            <div>
+                            <img class="main_image rounded" src="img/youg.jpeg" alt="Lana del Rey">
+                            <h6>Lana del Rey</h6>
+                        </div>
+                        <div>
+                            <img class="main_image rounded" src="img/einaudi.jpeg" alt="Einaudi">
+                            <h6>Einaudi</h6>
                         </div>
                     </div>
                     
+                    
                 </section>
+                
             </main>
             <!-- footer -->
             <footer>
@@ -149,8 +171,9 @@
                             <img src="img/sinister.jpeg" alt="Sinistrer">
                         </li>
                         <li>
-                            <div class="color_w footer_title_1">Sinistrer</div>
-                            <div class="footer_title">Brano Nome</div>
+                            <div class="color_w footer_title_1">Sinistrer
+                            </div>
+                            <a class="footer_title" href="#">Brano Nome</a>
                         </li>
                         <li>
                             <i class="far fa-heart"></i>
