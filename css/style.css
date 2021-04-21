@@ -24,9 +24,10 @@ li {
 nav {
     width: 250px;
     height: calc(100vh - 80px);
-    position: relative;
+    padding: 20px;
     font-size: 12px;
     font-weight: bold;
+    overflow-y: auto;
     background-color: black;
     color: #717171;
 }
@@ -48,16 +49,8 @@ nav h5 {
     padding-top : 20px;
     padding-bottom : 10px;
 }
-.plus {
-    font-size: 20px;
-
-}
 .nav_container {
-    padding: 30px;
-}
-.nav_container li,
-.nav_container h5 {
-    padding-left: 8px;
+    height: calc(100% - 80px);
 }
 .nav_first_list {
     display:flex;
@@ -83,12 +76,17 @@ nav .nav_second_list li {
 }
 .new_playlist {
     font-size: 16px;
-    padding-left: 10px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.plus {
+    padding-right: 10px;
+    font-size: 40px;
+    line-height: 40px;
     vertical-align: middle;
 }
 .nav_third_list {
-    position: absolute;
-    bottom: 1%;
+    height: 80px;
 }
 nav .nav_third_list li {
     padding: 10px 0;
@@ -96,7 +94,7 @@ nav .nav_third_list li {
     vertical-align: middle;
 }
 nav hr {
-    width: 200%;
+    width: 100%;
     border: 1px solid #717171;
     color:#717171;
 }
@@ -173,12 +171,14 @@ main {
     color:#717171;
 }
 .select {
-    border-bottom: 3px solid #9CE62E;
+    height: 3px;
+    width: 25%;
+    margin:auto;
+    background-color:#9CE62E;
 }
 .menu_up a:hover,
 .nav_first_list a:hover,
 .nav_second_list a:hover,
-.nav_second_list:first-child li:hover,
 .nav_third_list a:hover {
     color: white;
 }
@@ -330,7 +330,13 @@ footer {
     vertical-align: middle;
     border-radius: 5px;
     height: 5px;
-    background: linear-gradient(to right, white 30%,#717171 70%);
+    background-color: #5A5A5A;
+}
+.played {
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .footer_r {
@@ -349,10 +355,8 @@ footer {
     vertical-align: middle;
     border-radius: 5px;
     height: 5px;
-    background: linear-gradient(to right, white 30%,#717171 70%);
+    background-color: #5A5A5A;
 }
-
-
 
 
 /* queries */

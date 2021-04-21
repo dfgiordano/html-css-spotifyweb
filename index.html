@@ -14,45 +14,49 @@
         <div class="container">
             <!-- nav -->
             <nav>
-                <div class="nav_container">
-                    <img class="logo" src="img/logo.svg" alt="Spotify">
-                    <img class="mini_logo" src="img/logo-small.svg" alt="Spotify Mini">
-                    <ul class="nav_first_list">
-                        <li class="selected" >
-                            <img class="nav_little_logos" src="img/home.svg" alt="Home Icon"> 
+                <img class="logo" src="img/logo.svg" alt="Spotify">
+                <img class="mini_logo" src="img/logo-small.svg" alt="Spotify Mini">
+                <ul class="nav_first_list">
+                    <li class="selected" >
+                        <img class="nav_little_logos" src="img/home.svg" alt="Home Icon"> 
                             <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <img class="nav_little_logos" src="img/search.svg" alt="Search Icon"> 
-                            <a href="#">Cerca</a>
-                        </li>
-                        <li>
-                            <img class="nav_little_logos" src="img/libreria.svg" alt="Libraty Icon"> 
-                            <a href="#">La tua libreria</a>
-                        </li>
-                    </ul>
-                    <h5 class="color_w text_up">playlist</h5>
-                    <ul class="nav_second_list">
-                        <li>
-                            <i class="plus fas fa-plus-square"><span class="new_playlist"></span> <a href="#">Crea playlist</a></span></i>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li><li>
-                            <a href="#">Nome Playlist</a>
-                        </li><li>
-                            <a href="#">Nome Playlist</a>
-                        </li><li>
-                            <a href="#">Nome Playlist</a>
-                        </li><li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
+                    </li>
+                    <li>
+                        <img class="nav_little_logos" src="img/search.svg" alt="Search Icon"> 
+                        <a href="#">Cerca</a>
+                    </li>
+                    <li>
+                        <img class="nav_little_logos" src="img/libreria.svg" alt="Libraty Icon"> 
+                        <a href="#">La tua libreria</a>
+                    </li>
+                </ul>
+                <h5 class="color_w text_up">playlist</h5>
+                <ul class="nav_second_list">
+                    <li>
+                        <a href="#"><i class="plus fas fa-plus-square"></i></a>
+                        <a class="new_playlist" href="#">Crea playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
                     </ul>
                     <ul class="nav_third_list">
                         <li>
@@ -65,7 +69,6 @@
                             <span class="color_w"> John Doe </span> 
                         </li>
                     </ul>
-                </div>
             </nav>
             <!-- main -->
             <main>
@@ -76,7 +79,8 @@
                 </div>
                 <ul class="menu_up">
                     <li>
-                        <a class="select" href="#">in evidenza</a>
+                        <a href="#">in evidenza</a>
+                        <div class="select"> </div>
                     </li>
                     <li>
                         <a href="#">podcast</a>
@@ -144,7 +148,6 @@
                         </div>
                     </div>
                 </section>
-                
                 <section class="section_3">
                     <h2 class="main_third_title">Artisti pi&uacute; popolari</h2>
                     <p>Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti.</p>
@@ -161,7 +164,6 @@
                     
                     
                 </section>
-                
             </main>
             <!-- footer -->
             <footer>
@@ -191,7 +193,9 @@
                     </div>
                     <div class="line_playbar">
                         <span>0:25</span>
-                        <hr class="play_line">
+                        <div class="play_line">
+                            <div class="played"></div>
+                        </div>
                         <span>4:35</span>
                     </div>
                 </div>
@@ -199,7 +203,10 @@
                     <a href=""><i class="fas fa-list"></i></a>
                     <a href=""><i class="fas fa-desktop"></i></a>
                     <a href=""><i class="fas fa-volume-up"></i>
-                    <hr class="play_line2"></a>
+                    </a>
+                    <div class="play_line2">
+                        <div class="played"></div>
+                    </div>
                 </div>
             </footer>
         </div> 
