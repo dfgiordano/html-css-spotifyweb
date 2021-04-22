@@ -179,10 +179,14 @@ main {
     color:#717171;
 }
 .select {
+    display: none;
     height: 3px;
     width: 25%;
     margin:auto;
     background-color:#9CE62E;
+}
+li:hover .select {
+    display:block;
 }
 .menu_up a:hover,
 .nav_first_list a:hover,
