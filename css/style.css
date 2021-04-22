@@ -364,6 +364,7 @@ footer {
     font-size: 12px;
 }
 .play_line {
+    position: relative;
     width: 70%;
     display: inline-block;
     vertical-align: middle;
@@ -384,6 +385,20 @@ footer {
     border-radius: 5px;
     background-color: white;
 }
+.point_first {
+    display: none;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    position:absolute;
+    top: calc(0% - 2.5px);
+    left: 19%;
+    background-color:#9CE62E;
+
+}
+div.played:hover .point_first {
+    display: block;
+}
 .footer_r {
     width: 250px;
     line-height: 80px;
@@ -395,12 +410,16 @@ footer {
     color: white;
 }
 .play_line2 {
+    position: relative;
     width: 40%;
     display: inline-block;
     vertical-align: middle;
     border-radius: 5px;
     height: 5px;
     background-color: #5A5A5A;
+}
+div.played:hover .point_first {
+    display: block;
 }
 
 
@@ -413,7 +432,7 @@ footer {
         padding:0;
     }
     nav .nav_first_list a,
-    nav .nav_second_list li,
+    nav .nav_second_list:first-child li,
     nav .nav_third_list span,
     nav .nav_third_list hr,
     nav .nav_third_list a,
