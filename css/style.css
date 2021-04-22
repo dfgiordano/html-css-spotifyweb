@@ -302,9 +302,11 @@ footer {
     color: #717171;
 }
 .footer_title_1 {
+    font-size: 14px;
     font-weight: bold;
 }
 .footer_title {
+    font-size: 14px;
     text-decoration: none;
     color:#717171;
 }
