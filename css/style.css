@@ -14,9 +14,6 @@ li {
 .text_up {
     text-transform: uppercase;
 }
-.selected {
-    border-left: 3px solid #9CE62E;
-}
 /* nav */
 .container {
     display:flex;
@@ -33,13 +30,6 @@ nav {
     font-weight: bold;
     background-color: black;
     color: #717171;
-}
-.nav_top,
-.nav_middle {
-    justify-content: flex-start;
-}
-.nav_bottom {
-    justify-content: flex-end;
 }
 .nav_middle {
     overflow-y: auto;
@@ -79,6 +69,9 @@ nav .logo {
 .nav_little_logos {
     display: inline-block;
     height: 25px;
+}
+.selected {
+    border-left: 3px solid #9CE62E;
 }
 nav .nav_second_list a {
     text-decoration: none;
@@ -228,7 +221,7 @@ li:hover .select {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 55px;
     color:white;
     cursor:pointer;
 }
@@ -484,6 +477,9 @@ div.played:hover .point_first {
     }
     .main_image {
         height: 130px;
+    }
+    .layover > i {
+        font-size: 35px;
     }
     #max_width {
         width: 130px;
