@@ -34,6 +34,13 @@ nav {
     background-color: black;
     color: #717171;
 }
+.nav_top,
+.nav_middle {
+    justify-content: flex-start;
+}
+.nav_bottom {
+    justify-content: flex-end;
+}
 .nav_middle {
     overflow-y: auto;
 }
@@ -95,9 +102,7 @@ nav .nav_second_list li {
     height: 80px;
 }
 nav .nav_third_list li {
-    padding: 10px 0;
-    line-height: 10px;
-    vertical-align: middle;
+    padding-top: 10px;
 }
 nav hr {
     width: 100%;
@@ -132,10 +137,10 @@ main {
     top:0;
     height: 80px;
     width: calc(100% - 250px);
-    color: white;
     opacity: 0.9;
-    background-color: #080B13;
     z-index: 10;
+    color: white;
+    background-color: #080B13;
 }
 #upgrade {
     display: inline-block;
@@ -143,12 +148,11 @@ main {
     right: 0;
     padding: 10px 34px;
     border-radius: 30px;
-    border: 1px solid white;
     margin: 20px 0;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
-    background-color: transparent;
+    border: 1px solid white;
     color: white;
 }
 #upgrade:hover {
@@ -199,7 +203,7 @@ li:hover .select {
     margin-top: 20px;
     color: white;
 }
-.container_played {
+.section_1 {
     display: flex;
     flex-wrap: wrap;
     margin-left: 15px;
@@ -234,21 +238,14 @@ li:hover .select {
     top: 0;
     left: 0;
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .layover:hover {
     opacity: 1;
 }
 .layover_rounded {
-    height:100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
+} 
 h6 {
     text-align: center;
     text-transform: capitalize;
@@ -292,9 +289,9 @@ footer {
     height: 80px;
     display: flex;
     justify-content: space-between;
-    background-color: #282828;
     position: absolute;
     bottom: 0;
+    background-color: #282828;
 }
 .footer_l {
     display: flex;
@@ -393,8 +390,7 @@ footer {
     position:absolute;
     top: calc(0% - 2.5px);
     left: 19%;
-    background-color:#9CE62E;
-
+    background-color:white;
 }
 div.played:hover .point_first {
     display: block;
@@ -432,7 +428,7 @@ div.played:hover .point_first {
         padding:0;
     }
     nav .nav_first_list a,
-    nav .nav_second_list:first-child li,
+    nav .nav_second_list li,
     nav .nav_third_list span,
     nav .nav_third_list hr,
     nav .nav_third_list a,
@@ -450,6 +446,7 @@ div.played:hover .point_first {
     .nav_third_list {
        margin-left: 22px;
     }
+    /* header */
     .main_header {
         width: calc(100% - 70px);
     }
@@ -471,8 +468,14 @@ div.played:hover .point_first {
     main {
         width: calc(100% - 50px);
     }
+    .main_first_title {
+        margin-top: 0;
+    }
+    .menu_up a {
+        padding: 0px 5px;
+        font-size: 9px;
+    }
     .menu_up li {
-        padding: 2px;
         padding-bottom: 30px;
     }
     .main_image {
@@ -486,6 +489,7 @@ div.played:hover .point_first {
     }
     h6 {
         max-width: 130px;
+        padding-top: 10px;
     }
     /* footer */
     footer {
@@ -537,7 +541,7 @@ div.played:hover .point_first {
         padding: 1px;
     }
     .play_line2 {
-        width: 30%;
+        width: 50%;
     }
     .footer_c i:hover,
     .footer_r i:hover {
@@ -557,6 +561,9 @@ div.played:hover .point_first {
     }
     #upgrade {
         font-size: 12px;
+    }
+    .main_img {
+        height: 130px;
     }
     .footer_l {
         width: 30%;
@@ -604,7 +611,7 @@ div.played:hover .point_first {
         padding: 1px;
     }
     .play_line2 {
-        width: 30%;
+        width: 50%;
     }
     .footer_c i:hover,
     .footer_r i:hover {
@@ -619,13 +626,15 @@ div.played:hover .point_first {
     .menu_up li {
         padding-bottom: 30px;
     }
+    .container_img {
+        width: 130px;
+        height: 130px;
+    }
+    .main_image {
+        width: 130px;
+        height: 130px;
+    }
+    #max_width {
+        max-width: 130px;
+    }
 }
-/* @media screen and (max-width: 1200px) {
-    .play_line {
-        width: 60%;
-    }
-    .line_playbar span {
-        font-size:14px;
-        padding: 0 2px;
-    }
-} */
